@@ -30,9 +30,64 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+      <div class="row">
+        <div class="col col-2" value = "9">9AM</div>
+        <div class="col col-9"></div>
+        <div class="col col-1"></div>
+     </div>
+     <div class="row">
+        <div class="col col-2" value = "10">10AM</div>
+        <div class="col col-9"></div>
+        <div class="col col-1"></div>
+     </div>
+     <div class="row">
+        <div class="col col-2" value = "11">11AM</div>
+        <div class="col col-9"></div>
+        <div class="col col-1"></div>
+     </div>
+     <div class="row">
+        <div class="col col-2" value = "12">12PM</div>
+        <div class="col col-9"></div>
+        <div class="col col-1"></div>
+     </div>
+     <div class="row">
+        <div class="col col-2" value = "13">1PM</div>
+        <div class="col col-9"></div>
+        <div class="col col-1"></div>
+     </div>
+     <div class="row">
+        <div class="col col-2" value = "14">2PM</div>
+        <div class="col col-9"> </div>
+        <div class="col col-1"></div>
+     </div>
+     <div class="row">
+        <div class="col col-2" value = "15">3PM</div>
+        <div class="col col-9"></div>
+        <div class="col col-1"></div>
+     </div>
+     <div class="row">
+        <div class="col col-2" value = "16">4PM</div>
+        <div class="col col-9"></div>
+        <div class="col col-1"></div>
+     </div>
+     <div class="row">
+        <div class="col col-2" value = "17">5PM</div>
+        <div class="col col-9"></div>
+        <div class="col col-1"></div>
+     </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script type="text/javascript">
+            
+        var now = moment();
+        console.log(now);
+        var time = $(".col-2").val();
+        var setTimeValue = moment().set('hour', time);
+        console.log (setTimeValue);
+
+    </script>
+
   </body>
 </html>

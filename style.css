@@ -69,4 +69,19 @@ body {
     font-size: 20px;
     transition: all .3s ease-in-out;
   }
-  
+
+  .col-2 {
+      border-right: dotted 2px;
+      border-top: dotted 2px;
+      border-bottom: dotted 2px;
+      text-align: right;
+  }
+  .col-1 {
+      background-color: #b3e6ff;
+      border-radius: 0px 15px 15px 0px;
+      margin: 0px 0px 1px 0px;
+      text-align: center;
+  }
+  .col-9 {
+      margin: 0px 0px 1px 0px;
+  }
