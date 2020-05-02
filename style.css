@@ -84,4 +84,10 @@ body {
   }
   .col-9 {
       margin: 0px 0px 1px 0px;
+      background-color: lightgray;
+  }
+
+  input {
+      border: 0px;
+      background-color: transparent;
   }
