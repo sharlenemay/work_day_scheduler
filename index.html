@@ -31,49 +31,49 @@
     <div class="container">
       <!-- Timeblocks go here -->
       <div class="row">
-        <div class="col col-2" value = "9">9AM</div>
-        <div class="col col-9"><input type="text" size = "100" id="event-input"></div>
-        <div class="col col-1"></div>
+        <div class="col col-2" value = "9AM">9AM</div>
+        <div class="col col-9"><input type="text" id = "9" size = "100" id="event-input"></div>
+        <div class="col col-1"><button></button></div>
      </div>
      <div class="row">
-        <div class="col col-2" value = "10">10AM</div>
-        <div class="col col-9"><input type="text" size = "100" id="event-input"></div>
-        <div class="col col-1"></div>
+        <div class="col col-2" value = "10AM">10AM</div>
+        <div class="col col-9"><input type="text" id = "10" size = "100" id="event-input"></div>
+        <div class="col col-1"><button></button></div>
      </div>
      <div class="row">
-        <div class="col col-2" value = "11">11AM</div>
-        <div class="col col-9"><input type="text" size = "100" id="event-input"></div>
-        <div class="col col-1"></div>
+        <div class="col col-2" value = "11AM">11AM</div>
+        <div class="col col-9"><input type="text" id = "11" size = "100" id="event-input"></div>
+        <div class="col col-1"><button></button></div>
      </div>
      <div class="row">
-        <div class="col col-2" value = "12">12PM</div>
-        <div class="col col-9"><input type="text" size = "100" id="event-input"></div>
-        <div class="col col-1"></div>
+        <div class="col col-2" value = "12PM">12PM</div>
+        <div class="col col-9"><input type="text" id = "12" size = "100" id="event-input"></div>
+        <div class="col col-1"><button></button></div>
      </div>
      <div class="row">
-        <div class="col col-2" value = "13">1PM</div>
-        <div class="col col-9"><input type="text" size = "100" id="event-input"></div>
-        <div class="col col-1"></div>
+        <div class="col col-2" value = "1PM">1PM</div>
+        <div class="col col-9"><input type="text" id = "1" size = "100" id="event-input"></div>
+        <div class="col col-1"><button></button></div>
      </div>
      <div class="row">
-        <div class="col col-2" value = "14">2PM</div>
-        <div class="col col-9"><input type="text" size = "100" id="event-input"></div>
-        <div class="col col-1"></div>
+        <div class="col col-2" value = "2PM">2PM</div>
+        <div class="col col-9"><input type="text" id = "2" size = "100" id="event-input"></div>
+        <div class="col col-1"><button></button></div>
      </div>
      <div class="row">
-        <div class="col col-2" value = "15">3PM</div>
-        <div class="col col-9"><input type="text" size = "100" id="event-input"></div>
-        <div class="col col-1"></div>
+        <div class="col col-2" value = "3PM">3PM</div>
+        <div class="col col-9"><input type="text" id = "3" size = "100" id="event-input"></div>
+        <div class="col col-1"><button></button></div>
      </div>
      <div class="row">
-        <div class="col col-2" value = "16">4PM</div>
-        <div class="col col-9"><input type="text" size = "100" id="event-input"></div>
-        <div class="col col-1"></div>
+        <div class="col col-2" value = "4PM">4PM</div>
+        <div class="col col-9"><input type="text" id = "4" size = "100" id="event-input"></div>
+        <div class="col col-1"><button></button></div>
      </div>
      <div class="row">
-        <div class="col col-2" value = "17">5PM</div>
-        <div class="col col-9"><input type="text" size = "100" id="event-input"></div>
-        <div class="col col-1"></div>
+        <div class="col col-2" value = "5PM">5PM</div>
+        <div class="col col-9"><input type="text" data-value = "5" size = "100" id="event-input"></div>
+        <div class="col col-1"><button></button></div>
      </div>
     </div>
 
@@ -82,9 +82,19 @@
     <script type="text/javascript">
     
     $(document).ready(function (){
-
-        var now = moment().toString;
+        // hourly time
+        var now = moment().format("hA");;
+        
         console.log(now);
+
+        // Save on Local Storage by creating event listener onclick
+
+        // $("button").click( function() {
+            
+        //     var event = eventInput.value.trim();
+        //     localStorage.setItem("event",JSON.stringify(event));
+        // })
+
 
     })
 

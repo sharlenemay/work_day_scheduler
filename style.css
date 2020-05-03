@@ -91,3 +91,8 @@ body {
       border: 0px;
       background-color: transparent;
   }
+
+  button {
+      text-align: center;
+      margin: 30px;
+  }
